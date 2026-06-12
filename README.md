@@ -4,7 +4,7 @@ Encrypt and Decrypt program made by Python, Which's build with Fernet, argon2id 
 
 ### Requirements / 環境需求
 * Python 3.8+
-pip install cryptography argon2-cffi
+* pip install cryptography argon2-cffi
 
 
 # JaceEncryptor (基於 Argon2id + Fernet 的軍規級本地檔案加密系統)
