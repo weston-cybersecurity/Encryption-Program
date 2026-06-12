@@ -32,3 +32,13 @@ An advanced, high-security local file encryption system utilizing Argon2id for k
 * **EN:** No more worry about losing `salt.key` or `secret.key`. The system dynamically generates a cryptographic 16-byte random salt for each file and **prepends it directly to the ciphertext binary stream**. The decryption module streams it out fluidly via pointer indexing.
 * **中文:** 擺脫了必須單獨保存金鑰或鹽值檔案的致命缺點。系統為每個檔案動態生成獨立的 16 位元組隨機鹽值（Salt），並**一體化拼接在密文流的最前端**。解密時利用二進位指標動態拆解，實現「金鑰隨檔案走」的極高便攜性。
 
+## How to usage? / 如何使用?
+
+### put the program and the files you want to encrypt at same folder. / 將程式與需要加解密的檔案放在同樣的資料夾
+<img width="1001" height="403" alt="image" src="https://github.com/user-attachments/assets/ffb5a917-0bce-4416-9b6c-c99b3e06ffe3" />
+### Starting encryption and decryption testing. / 開始進行加密和解密測試
+<img width="1757" height="392" alt="image" src="https://github.com/user-attachments/assets/46ee2b38-aa53-4bd5-b20e-7c3706ab247c" />
+<img width="1836" height="377" alt="image" src="https://github.com/user-attachments/assets/2a329860-9403-4d80-ae41-bcdac6507ce7" />
+
+
+
