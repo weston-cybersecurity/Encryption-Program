@@ -36,6 +36,7 @@ An advanced, high-security local file encryption system utilizing Argon2id for k
 
 ### put the program and the files you want to encrypt at same folder. / 將程式與需要加解密的檔案放在同樣的資料夾
 <img width="1001" height="403" alt="image" src="https://github.com/user-attachments/assets/ffb5a917-0bce-4416-9b6c-c99b3e06ffe3" />
+
 ### Starting encryption and decryption testing. / 開始進行加密和解密測試
 <img width="1757" height="392" alt="image" src="https://github.com/user-attachments/assets/46ee2b38-aa53-4bd5-b20e-7c3706ab247c" />
 <img width="1836" height="377" alt="image" src="https://github.com/user-attachments/assets/2a329860-9403-4d80-ae41-bcdac6507ce7" />
