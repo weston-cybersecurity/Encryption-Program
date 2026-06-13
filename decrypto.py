@@ -1,3 +1,8 @@
+"""
+Create by Jace Wu
+jaceweston45@gmail.com
+"""
+
 import base64
 import os
 import time
