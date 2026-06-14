@@ -1,8 +1,3 @@
-"""
-Create by Jace Wu
-jaceweston45@gmail.com
-"""
-
 import base64
 import os
 import time
@@ -42,8 +37,8 @@ def check_files():
 
 
 def Decryption(user_enter):
-    print("It going to decrypt...")
-    time.sleep(2.5)
+    print("[+] It going to decrypt...\n")
+    time.sleep(3)
 
     for file in files:
         try:
@@ -64,7 +59,7 @@ def Decryption(user_enter):
             if file.endswith(".EncryptJace"):
                 new_file = file.replace(".EncryptJace", "")
                 os.rename(file, new_file)
-            time.sleep(0.5)
+            time.sleep(0.7)
         except InvalidToken:
             print(f"\n[!] Incorrect password for {file} or file corrupted.")
             break
@@ -73,10 +68,13 @@ if __name__ == "__main__":
     check_files()
     if not files:
         print("[!] No file found to encryption !\n")
+        input("[!]We're didn't found any FILES to decryption... Enter to leave")
         exit()
     
-    psd_input = input("Enter The Password To Decrypted All Of Your Files\n$>> ")
+    psd_input = input("[$] Enter The Password To Decrypted All Of Your Files\n$>> ")
     Decryption(psd_input)
+    input("[+] Done ! Hava a Good Day ! Enter to leave.")
+
 
 
 

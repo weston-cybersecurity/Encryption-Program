@@ -1,8 +1,3 @@
-"""
-Create by Jace Wu
-jaceweston45@gmail.com
-"""
-
 import base64
 import os 
 import time
@@ -45,7 +40,7 @@ def set_encrypt():
     global key, salt
 
     while True:
-        user_password = input("\nSet A Password To Encrypt your Files\n$>> ").encode()
+        user_password = input("\n[$] Set A Password To Encrypt your Files\n$>> ").encode()
         
         if len(user_password) < 10:
             print("Your password are too short, Please more than 10 numbers.\n")
@@ -79,7 +74,7 @@ def Encryption(salt):
             new_file = file + ".EncryptJace"
             os.rename(file, new_file)
             print(f"Encrypted Successful ! -> {new_file}")
-            time.sleep(1.5)
+            time.sleep(0.7)
         
         except Exception as e:
             print(f"When handle files '{file}' found mistake: {e}")
@@ -93,10 +88,12 @@ if __name__ == "__main__":
         exit()
 
     set_encrypt()
-    print("It going to Encryption...")
+    print(f"[+] It going to Encryption...\n")
     time.sleep(3)
     
     Encryption(salt)
+    input("[+] Done ! Have a Good Day ! Enter to leave")
+
 
 
 
